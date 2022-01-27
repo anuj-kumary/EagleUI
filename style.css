@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-family: 'Quicksand', sans-serif;
+    --primary-color: "#6d28d9";
+    --text-color:color: rgb(90, 90, 90);
+ }
+ html {
+     font-size: 16px;
+     scroll-behavior: smooth;
+ }
+ body{
+     width: 80%;
+     min-height: 100vh;
+     height: max-content;
+     margin: auto;
+ }
+ li{
+     list-style-type: none;
+ }
+ a{
+     text-decoration: none;
+     color: var(--text-color);
+ }
