@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 :root {
-    --font-family: 'Quicksand', sans-serif;
-    --primary-color: "#6d28d9";
-    --text-color:color: rgb(90, 90, 90);
+    --font-family:'Montserrat', sans-serif;
+    --primary-color: #7c3aed;
+    --text-color: rgb(90, 90, 90);
  }
  html {
      font-size: 16px;
@@ -18,10 +19,71 @@
      height: max-content;
      margin: auto;
  }
+ img{
+    height: 100%;
+	width: 100%;
+	object-fit: cover;
+ }
  li{
      list-style-type: none;
  }
  a{
      text-decoration: none;
      color: var(--text-color);
+ }
+ .hero{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+ }
+ .hero__background{
+     width: 20rem;
+ }
+ .hero__heading{
+     font-size: 3rem;
+     font-weight: 700;
+     text-transform: capitalize;
+ }
+ .hero__sub-heading{
+     font-size: 1.5rem;
+     font-weight: 300;
+     margin: auto;
+     width: 90%;
+     line-height: 2.5rem;
+     padding: 1rem 0 1.5rem;
+ }
+ .btn-container{
+     margin: auto;
+     display: flex;
+     justify-content: space-evenly;
+     width: 300px;
+ }
+ .btn{
+     font-weight: 600;
+     min-width: 100px;
+     padding: .8rem;
+     border-radius: 5px;
+     border: none;
+     cursor: pointer;
+     transition: all .3s ease-in-out;
+ }
+ .btn__primary{
+     background-color: var(--primary-color);
+     color: #fcfcfc;
+ }
+ .btn__primary:hover{
+     background-color: #fcfcfc;
+     border: 1px solid var(--primary-color);
+     color: #111;
+
+ }
+ .btn__secondary{
+    color: #111;
+    border: 1px solid var(--primary-color);
+ }
+ .btn__secondary:hover{
+    background-color: var(--primary-color);
+    color: #fcfcfc;
  }
