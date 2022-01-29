@@ -30,7 +30,6 @@ input[type="password"] {
   border: 1px solid var(--danger-color);
 }
 .textarea {
-  resize: none;
   border-color: var(--border-color);
   padding: 1rem;
   font-size: 1rem;
