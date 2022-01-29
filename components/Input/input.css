@@ -1,14 +1,5 @@
-.input-container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  margin: 10px;
-}
 .input {
-    color: #333;
+    color: var(--text-color);
     font-size: 0.8rem;
     line-height: 1.2rem;
     margin: 0 1.1rem .8rem;
@@ -19,7 +10,7 @@
   }
   .input-txt {
     background: #fff;
-    border: 1px solid #999;
+    border: 1px solid var(--border-color);
     padding: 0.6rem 0.7rem;
     float: left;
     font-size: 0.8rem;
@@ -34,4 +25,16 @@
     align-items: center;
     margin: 1rem;
     font-size: 13px;
+}
+input[type="password"] {
+  border: 1px solid var(--danger-color);
+}
+.textarea {
+  resize: none;
+  border-color: var(--border-color);
+  padding: 1rem;
+  font-size: 1rem;
+}
+.input--err {
+  color: var(--danger-color);
 }

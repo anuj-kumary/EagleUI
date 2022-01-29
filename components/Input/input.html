@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/component.css" />
   </head>
   <body>
-    <div class="input-container">
       <div class="input">
         <label>Name</label>
         <input class="input-txt" type="text" />
@@ -17,13 +16,21 @@
         <label>Email</label>
         <input class="input-txt" type="email" />
       </div>
-      <div class="input">
+      <div class="input input--err">
         <label>Password</label>
         <input class="input-txt" type="password" />
+        <p class="input--err">Wrong Password. Try again.</p>
       </div>
-    </div>
+      <div class="input">
+        <textarea class="textarea" cols="40" rows="10"></textarea>
+      </div>
+      
+      <div class="input">
+        <input  type="range"  id="input-id-range"  min="0"
+        max="100" defaultValue="70"  className="cur-point"
+      />
+      </div>
 
-    <div class="input-container">
       <div class="radio">
         <input type="radio" name="language" value="HTML" />
         <label for="html">HTML</label><br />
@@ -32,6 +39,6 @@
         <input type="radio" name="language" value="JavaScript" disabled />
         <label for="javascript">JavaScript</label>
       </div>
-    </div>
+
   </body>
 </html>
