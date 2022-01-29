@@ -19,6 +19,7 @@
      height: max-content;
      margin: auto;
      font-family: var(--font-family);
+     overflow-x: hidden;
  }
  img{
     height: 100%;
@@ -87,4 +88,18 @@
  .btn__secondary:hover{
     background-color: var(--primary-color);
     color: #fcfcfc;
+ }
+
+
+
+@media screen and (max-width:740px){
+    html{
+        font-size: 12px;
+    }
+}
+
+ @media screen and (max-width:480px) {
+     html{
+         font-size: 10px;
+     }
  }
