@@ -3,6 +3,7 @@
     --black:#111;
     --blue: #0000ff;
     --off-white: #f8fafc;
+    --border: 1px solid;
 }
 .btn {
     padding: 0.5rem 1rem;
@@ -44,28 +45,30 @@
   .btn__light {
     background-color:var(--off-white);
   }
-  .outlined {
+  .btn--outlined {
     background-color: var(--white);
-    border: 1px solid var(--primary-color);
+    border-color: (--primary-color);
     color: var(--primary-color);
+    border-width: 1px;
+    border-style: solid;
   }
   .outlined__secondary {
     background-color: var(--white);
-    border: 1px solid var(--black);
+    border-color: var(--black);
   }
   .outlined__success {
     background-color: var(--white);
-    border: 1px solid var(--success-color);
+    border-color:  var(--success-color);
     color: var(--success-color);
   }
   .outlined__error {
     background-color: var(--white);
-    border: 1px solid var(--error-color);
+    border-color:  var(--error-color);
     color: var(--error-color);
   }
   .outlined__warn {
     background-color: var(--white);
-    border: 1px solid var(--warning-color);
+    border-color:var(--warning-color);
     color: var(--warning-color);
   }
   .floating-btn {
