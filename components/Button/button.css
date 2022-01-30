@@ -15,11 +15,11 @@
     cursor: pointer;
     margin: 0.625rem;
   }
-  .btn__primary {
+  .btn__default {
     background-color: var(--primary-color);
     color: var(--white);
   }
-  .btn__secondary{
+  .btn--secondary{
       outline: none;
   }
   .btn__success {
@@ -55,6 +55,7 @@
   .outlined__secondary {
     background-color: var(--white);
     border-color: var(--black);
+    color: var(--black);
   }
   .outlined__success {
     background-color: var(--white);
@@ -63,7 +64,7 @@
   }
   .outlined__error {
     background-color: var(--white);
-    border-color:  var(--error-color);
+    border-color: var(--error-color);
     color: var(--error-color);
   }
   .outlined__warn {
