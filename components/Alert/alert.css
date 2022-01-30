@@ -1,0 +1,40 @@
+  :root{
+    --error-background:#fdecea;
+    --info-background:  #e8f3fb;
+    --warn-background: #fff5e3;
+  }
+  .alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alert__success,
+  .alert__info,
+  .alert__error,
+  .alert__warning {
+    color: var(--success-color);
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #edf7ec;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30rem;
+    cursor: pointer;
+  }
+  .alert__error {
+    background-color: var(--error-background);
+    color: var(--error-color);
+  }
+  .alert__info {
+    background-color: var(--info-background);
+    color: var(--info-color);
+  }
+  .alert__warning {
+    background-color: var(--warn-background);
+    color: var(--warning-color);
+  }
+  i {
+    padding-right: 0.7rem;
+  }
+  
