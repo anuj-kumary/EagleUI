@@ -8,16 +8,16 @@
     object-fit: cover;
   }
   .sq-images__images {
-    height: 180px;
-    width: 180px;
-    margin: 10px;
+    height: 11.25rem;
+    width: 11.25rem;
+    margin: 0.625rem;
     object-fit: cover;
   }
   
   .round-images__images {
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    margin: 10px;
+    height: 11.25rem;
+    width: 11.25rem;
+    margin: 0.625rem;
     object-fit: cover;
   }
