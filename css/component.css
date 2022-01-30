@@ -1,4 +1,5 @@
+@import url("/style.css");
 @import url("../components/Avatar/avatar.css");
 @import url("../components/Badge/badge.css");
 @import url("../components/Alert/alert.css");
-@import url("/style.css");
+@import url("../components/Button/button.css");

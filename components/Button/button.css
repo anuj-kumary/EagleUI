@@ -1,0 +1,85 @@
+:root{
+    --white:#fff;
+    --black:#111;
+    --blue: #0000ff;
+    --off-white: #f8fafc;
+}
+.btn {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    min-width: 6.25;
+    width: max-content;
+    padding: 0.8rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 0.625rem;
+  }
+  .btn__primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  .btn__secondary{
+      outline: none;
+  }
+  .btn__success {
+    background-color: var(--success-color);
+    color: var(--white);
+  }
+  .btn__error {
+    background-color: var(--error-color);
+    color: var(--white);
+  }
+  .btn__warn {
+    background-color: var(--warning-color);
+  }
+  .btn__dark {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  .btn__link{
+      text-decoration: underline;
+      color: var(--blue);
+      font-weight:400
+  }
+  .btn__light {
+    background-color:var(--off-white);
+  }
+  .outlined {
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  .outlined__secondary {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+  }
+  .outlined__success {
+    background-color: var(--white);
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+  }
+  .outlined__error {
+    background-color: var(--white);
+    border: 1px solid var(--error-color);
+    color: var(--error-color);
+  }
+  .outlined__warn {
+    background-color: var(--white);
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+  }
+  .floating-btn {
+    background-color: var(--error-color);
+    color: var(--white);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .icon {
+    padding-right: 0.5rem;
+  }
+  
