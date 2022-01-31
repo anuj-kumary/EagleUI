@@ -1,26 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
   :root {
     --bg-color: blueviolet;
     --white: #fff;
     --black: #111;
-  }
-  html {
-    font-size: 16px;
-  }
-  body {
-    font-family: sans-serif;
-    overflow-x: hidden;
-  }
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-  img {
-    width: 100%;
   }
   .card {
     display: flex;
@@ -78,7 +59,7 @@
     margin: 0 0.9rem;
     color: var(--black);
   }
-  span {
+  .span {
     padding: 0 0.5rem;
     font-size: 1.2rem;
     text-align: center;
