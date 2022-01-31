@@ -22,6 +22,7 @@
      min-height: 100vh;
      height: max-content;
      margin: auto;
+     font-family: var(--font-family);
  }
  img{
     height: 100%;

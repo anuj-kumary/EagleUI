@@ -21,9 +21,9 @@
     border-radius: 50%;
   }
   .status-online {
-    background-color: #1b7052;
+    background-color: var(--success-color);
     position: absolute;
-    bottom: 4%;
+    bottom: 0.625rem;
     left: 7rem;
   }
   .badge__avatar-md {
@@ -41,7 +41,7 @@
     left: 0;
   }
   .status-idle {
-    background-color: #f9a61a;
+    background-color: var(--warning-color);
     position: absolute;
     left: 5.6rem;
     bottom: 0.7rem;
@@ -53,7 +53,7 @@
   .status-offline {
     width: 1rem;
     height: 1rem;
-    border: 2px solid #71838f;
+    border: 2px solid var(--text-color);
     background-color: #111;
     position: absolute;
     left: 4.1rem;
