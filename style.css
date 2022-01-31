@@ -11,6 +11,10 @@
     --danger-color: #dc143c;
     --border-color: #999;
     --off-white : #F6F9FC;
+    --success-color: #4CAF50;
+    --error-color: #dc143c;
+    --warning-color: #FF9800;
+    --info-color:  #ca8a04;
  }
  html {
      font-size: 16px;
@@ -21,6 +25,7 @@
      min-height: 100vh;
      height: max-content;
      margin: auto;
+     font-family: var(--font-family);
  }
  img{
     height: 100%;
