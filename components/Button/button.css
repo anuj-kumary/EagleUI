@@ -86,4 +86,36 @@
   .icon {
     padding-right: 0.5rem;
   }
-  
+  .floating-container{
+    width: 40rem;
+    height: 15rem;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .list-item{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-around;
+  }
+   .btn__floating{
+    position: fixed;
+    bottom: 6rem;
+    left: 42rem;
+    padding: 1rem 0;
+    display: flex;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border-width: 0;
+    background-color: var(--success-color);
+  }
+  .floating__icon{
+    text-align: center;
+    font-size: 1rem;
+    padding-left: .6rem;
+    color: var(--white);
+  }
