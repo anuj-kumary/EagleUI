@@ -8,6 +8,9 @@
     --font-family:'Montserrat', sans-serif;
     --primary-color: #7c3aed;
     --text-color: rgb(90, 90, 90);
+    --danger-color: #dc143c;
+    --border-color: #999;
+    --off-white : #F6F9FC;
     --success-color: #4CAF50;
     --error-color: #dc143c;
     --warning-color: #FF9800;

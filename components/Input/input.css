@@ -1,0 +1,39 @@
+.input {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 0 1.1rem .8rem;
+    width: 80%;
+  }
+  label {
+    display: block;
+  }
+  .input-txt {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 0.7rem;
+    float: left;
+    font-size: 0.8rem;
+    margin: 0.313rem 0;
+    width: 100%;
+    transition: 0.3s all ease;
+    outline: none;
+    border-radius: 2px;
+  }
+.radio,input[type=radio]{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 0.813rem;
+}
+input[type="password"] {
+  border: 1px solid var(--danger-color);
+}
+.textarea {
+  border-color: var(--border-color);
+  padding: 1rem;
+  font-size: 1rem;
+}
+.input--err {
+  color: var(--danger-color);
+}
