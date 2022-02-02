@@ -1,0 +1,73 @@
+.text__left {
+    text-align: left;
+}
+
+.text__right {
+    text-align: right;
+}
+
+.text__center {
+    text-align: center;
+}
+
+.fs__1 {
+    font-size: 0.75rem;
+}
+
+.fs__2 {
+    font-size: 1rem;
+}
+
+.fs__3 {
+    font-size: 1.25rem;
+}
+
+.fs__4 {
+    font-size: 1.5rem;
+}
+
+.fs__5 {
+    font-size: 1.75rem;
+}
+
+.fs__6 {
+    font-size: 2rem;
+}
+
+.fw__900 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.fw__700 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.fw__400 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.fw__300 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.fw__100 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.text__grey {
+    color: var(--text-color);
+}
+
+.paragraph {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.horizonatl-line {
+    margin: 2rem 0;
+}
