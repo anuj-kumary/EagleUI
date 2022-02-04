@@ -19,6 +19,23 @@
     font-weight: 500;
     font-size: .9rem;
 }
+.navbar__hamburger{
+    display: none;
+    font-size: 1rem;
+}
 .navbar__link:hover{
     color: #111;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .navbar__hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+.show{
+    display: block;
+}
 }

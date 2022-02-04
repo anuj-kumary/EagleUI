@@ -16,6 +16,7 @@
     --error-color: #dc143c;
     --warning-color: #FF9800;
     --info-color:  #ca8a04;
+    --docs-text-color:#474d66;
  }
  html {
      font-size: 16px;
