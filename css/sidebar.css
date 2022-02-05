@@ -8,6 +8,7 @@
     color: #000;
     font-weight: 700;
     font-size: 1rem;
+    padding: .5rem 0;
 }
 .sidebar__link{
     padding: 0.7rem 1.9rem;
