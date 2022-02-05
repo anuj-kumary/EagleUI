@@ -1,0 +1,63 @@
+.hamburger,
+.close-sidebar {
+  display: none;
+}
+
+.doc-container {
+  width: 100%;
+  margin: 3.125rem auto 0;
+  display: flex;
+  padding: 0 1rem;
+}
+
+#heading {
+  padding: 1rem 1.9rem;
+
+}
+
+.content {
+  min-width: 0;
+  margin: 0 auto;
+  max-width: 50rem;
+  flex: 1 1 0%;
+}
+
+.content__heading {
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem
+}
+
+.content__subtitle {
+  color: var(--docs-text-color);
+  margin-bottom: 2rem;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.content__topic {
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.divider {
+  margin-bottom: 2rem;
+  background-color: #dadadaf3;
+}
+
+.code-snippet-display {
+  box-sizing: border-box;
+  width: 100%;
+  height: max-content;
+  background-color: #fafafa;
+  margin: 1rem 0;
+  overflow: auto;
+}
+
+.code-snippet-display iframe {
+  width: 100%;
+  border: none;
+}
