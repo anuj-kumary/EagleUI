@@ -101,9 +101,10 @@
     justify-content: space-around;
   }
    .btn__floating{
-    position: fixed;
-    bottom: 6rem;
-    left: 42rem;
+    position: sticky;
+    /* bottom: 6rem;
+    left: 42rem; */
+    right: 3rem;
     padding: 1rem 0;
     display: flex;
     width: 3rem;

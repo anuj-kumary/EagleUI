@@ -1,62 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eagle | Button</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/css/component.css" />
-  </head>
-  <body>
-    <header>Button</header>
-    <button class="btn btn__default">Primary</button>
-    <button class="btn btn--secondary">Secondary</button>
-    <button class="btn btn__success">Success</button>
-    <button class="btn btn__error">Error</button>
-    <button class="btn btn__warn">Warning</button>
-    <button class="btn btn__dark">Dark</button>
-    <button class="btn btn__light">Light</button>
-    <header>Link button</header>
 
-    <button class="btn">
-      <a class="btn__link" href="#">Link</a>
-    </button>
-    <a class="btn__link" href="#">See More</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eagle | Button</title>
+  <link rel="stylesheet" href="/css/component.css" />
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <header>Icon button</header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
+    integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <button class="btn"><i class="icon fa fa-home"></i> Home</button>
-    <button class="btn"><i class="icon fa fa-bars"></i> Menu</button>
-    <button class="btn"><i class="icon fa fa-trash"></i> Trash</button>
-    <button class="btn"><i class="icon fas fa-times"></i> Close</button>
-    <button class="btn"><i class="icon fa fa-folder"></i> Folder</button>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 
-    <header>Outlined button</header>
+</head>
 
-    <button class="btn btn--outlined">Primary</button>
-    <button class="btn btn--outlined outlined__secondary">Secondary</button>
-    <button class="btn btn--outlined outlined__success">Success</button>
-    <button class="btn btn--outlined outlined__error">Error</button>
-    <button class="btn btn--outlined outlined__warn">Warning</button>
-
-    <br />
-
-
-    <div class="floating-container">
-      <ul class="list-item">
-      <li class="item">Item One</li>
-      <li class="item">Item Two</li>
-      <li class="item">Item Three</li>
-    </ul>
-    <hr>
-      <button class="btn__floating"><i class="floating__icon fas fa-chevron-up"></i></button>
+<body>
+  <nav class="navbar">
+    <div class="navbar__left">
+      <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
     </div>
-  </body>
+    <ul class="navbar__right">
+      <li class="navbar__link"><a href="docs.html"> Docs </a></li>
+      <li class="navbar__link">Release</li>
+      <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+    </ul>
+  </nav>
+  <div class="doc-container">
+    <aside class="sidebar">
+      <header class="sidebar__heading">Get Started</header>
+      <hr />
+      <ul>
+        <li class="sidebar__link">
+          <a href="/Documentation/docs.html">Introduction</a>
+        </li>
+        <li class="sidebar__link"><a href="#Starter_template">Colors</a></li>
+        <li class="sidebar__link">
+          <a href="/components/Text-Utility/text.html">Typograpgy</a>
+        </li>
+        <header id="components" class="sidebar__heading">Components</header>
+        <hr />
+        <li class="sidebar__link">
+          <a href="/components/Avatar/avatar.html">Avatar </a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Alert/alert.html">Alert</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Badge/badge.html">Badge</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Button/button.html">Button</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Card/card.html">Card</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Image-Resp/image.html">Image</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Input/input.html">Input </a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Toast/toast.html">List</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Navigation/navigation.html">Navigation</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="content__topic">Button</div>
+      <p class="content__subtitle">
+        The Button component is used to trigger an action or event. EagleUI provides various types of buttons that you
+        can use in your website's such as submitting a form, opening a dialog, canceling an action, or performing a
+        delete operation.
+      </p>
+      <hr class="divider" />
+      <div class="content__topic">Solid Buttons</div>
+      <div class="content__subtitle">
+        EagleUI provides buttons with different state such as Success, Error, Warning, Dark and Light.
+      </div>
+      <div class="example__div">
+        <button class="btn btn__default">Primary</button>
+        <button class="btn btn--secondary">Secondary</button>
+        <button class="btn btn__success">Success</button>
+        <button class="btn btn__error">Error</button>
+        <button class="btn btn__warn">Warning</button>
+        <button class="btn btn__dark">Dark</button>
+        <button class="btn btn__light">Light</button>
+      </div>
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;button class="btn btn__default"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn--secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn__success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn__error"&gt;Error&lt;/button&gt;
+&lt;button class="btn btn__warn"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn__dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn__light"&gt;Light&lt;/button&gt;
+            </code>
+        </pre>
+      </div>
+      <hr class="divider" />
+      <div class="content__topic">Link Buttons</div>
+      <div class="content__subtitle">Want to attach a link action, at a button tap? Use <strong>btn__link</strong>
+        Button</div>
+      <div class="example__div">
+        <button class="btn">
+          <a class="btn__link" href="#">Link</a>
+        </button>
+        <a class="btn__link" href="#">See More</a>
+      </div>
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;button class="btn"&gt;
+&lt;a class="btn__link" href="#">Link&lt;/a&gt;
+&lt;/button>
+&lt;a class="btn__link" href="#">See More&lt;/a&gt;
+            </code>
+        </pre>
+        <hr class="divider" />
+        <div class="content__topic">Icon Buttons</div>
+        <div class="content__subtitle">Add the <strong>btn</strong> class to the button element and a fontawesome icon.
+        </div>
+        <div class="example__div">
+          <button class="btn"><i class="icon fa fa-home"></i> Home</button>
+          <button class="btn"><i class="icon fa fa-bars"></i> Menu</button>
+          <button class="btn"><i class="icon fa fa-trash"></i> Trash</button>
+          <button class="btn"><i class="icon fas fa-times"></i> Close</button>
+          <button class="btn"><i class="icon fa fa-folder"></i> Folder</button>
+        </div>
+        <main class="code-snippet-display">
+          <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;button class="btn"&gt;&lt;i class="icon fa fa-home"&gt;&lt;/i&gt; Home&lt;/button&gt;
+&lt;button class="btn"&gt;&lt;i class="icon fa fa-bars"&gt;&lt;/i&gt; Menu&lt;/button&gt;
+&lt;button class="btn"&gt;&lt;i class="icon fa fa-trash"&gt;&lt;/i&gt; Trash&lt;/button&gt;
+&lt;button class="btn"&gt;&lt;i class="icon fas fa-times"&gt;&lt;/i&gt; Close&lt;/button&gt;
+&lt;button class="btn"&gt;&lt;i class="icon fa fa-folder"&gt;&lt;/i&gt; Folder&lt;/button&gt;
+            </code>
+        </pre>
+          <hr class="divider" />
+          <div class="content__topic">Outlined Buttons</div>
+          <div class="content__subtitle">
+            In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
+            with the <strong>btn--outlined</strong> and <strong>outlined__success</strong> ones to remove all background
+            images and colors on any button.
+          </div>
+          <div class="example__div">
+            <button class="btn btn--outlined">Primary</button>
+            <button class="btn btn--outlined outlined__secondary">Secondary</button>
+            <button class="btn btn--outlined outlined__success">Success</button>
+            <button class="btn btn--outlined outlined__error">Error</button>
+            <button class="btn btn--outlined outlined__warn">Warning</button>
+          </div>
+          <hr class="divider" />
+          <div class="content__topic">Floating Buttons</div>
+          <div class="example__div">
+            <button class="btn__floating"><i class="floating__icon fas fa-chevron-up"></i></button>
+          </div>
+          <div class="code-snippet-display">
+            <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;button class="btn__floating"&gt;&lt;i class="floating__icon fas fa-chevron-up"&gt;&lt;/i&gt;&lt;/button&gt;
+            </code>
+        </pre>
+          </div>
+        </main>
+
+
+
+        <script src="/script.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+          integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script>
+</body>
+
 </html>
