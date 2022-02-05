@@ -12,10 +12,12 @@
     --danger-color: #dc143c;
     --border-color: #999;
     --off-white : #F6F9FC;
+    --off-grey: #dadadaf3;;
     --success-color: #4CAF50;
     --error-color: #dc143c;
     --warning-color: #FF9800;
     --info-color:  #ca8a04;
+    --content-color: #333;
  }
  html {
      font-size: 16px;
