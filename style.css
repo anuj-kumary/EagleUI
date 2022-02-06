@@ -102,3 +102,9 @@
     background-color: var(--primary-color);
     color: #fcfcfc;
  }
+
+ @media screen and (max-width:600px){
+     html{
+         font-size:10px;
+     }
+ }
