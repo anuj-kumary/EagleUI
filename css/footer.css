@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.prev__component, .next__component{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.next__icon{
+    padding-left: .5rem;
+}
