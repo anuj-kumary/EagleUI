@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagle | Card</title>
     <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -13,9 +15,79 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
+  integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
+
 </head>
 <body>
-    <div class="card">
+  <nav class="navbar">
+    <div class="navbar__left">
+      <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
+    </div>
+    <ul class="navbar__right">
+      <li class="navbar__link"><a href="docs.html"> Docs </a></li>
+      <li class="navbar__link">Release</li>
+      <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+    </ul>
+  </nav>
+  <div class="doc-container">
+    <aside class="sidebar">
+      <header class="sidebar__heading">Get Started</header>
+      <hr />
+      <ul>
+        <li class="sidebar__link">
+          <a href="/Documentation/docs.html">Introduction</a>
+        </li>
+        <li class="sidebar__link"><a href="#Starter_template">Colors</a></li>
+        <li class="sidebar__link">
+          <a href="/components/Text-Utility/text.html">Typograpgy</a>
+        </li>
+        <header id="components" class="sidebar__heading">Components</header>
+        <hr />
+        <li class="sidebar__link">
+          <a href="/components/Avatar/avatar.html">Avatar </a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Alert/alert.html">Alert</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Badge/badge.html">Badge</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Button/button.html">Button</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Card/card.html">Card</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Image-Resp/image.html">Image</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Input/input.html">Input </a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Toast/toast.html">Toast</a>
+        </li>
+        <li class="sidebar__link">
+          <a href="/components/Navigation/navigation.html">Navigation</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="content__topic">Card</div>
+      <p class="content__subtitle">
+        A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+      </p>
+      <hr class="divider" />
+      <div class="content__topic">Card With Badge</div>
+      <div class="example__div">
+      <div class="card">
         <div class="card__img">
             <span class="card--badge">Premium</span>
           <img
@@ -42,7 +114,8 @@
         </footer>
       </div>
     </div>
-
+  <div class="content__topic">Vertical Card</div>
+  <div class="example__div">
         <div class=" card card--order">
           <div class="card__img card__img--order">
             <img
@@ -68,9 +141,9 @@
             </div>
           </footer>
         </div>
-                </div>
-                
-
+      </div>
+      <div class="content__topic">Card with text overlay</div>  
+      <div class="example__div">
       <div class="card card--position">
         <div class="card__img card__img--position">
           <img
@@ -99,8 +172,8 @@
     </div>
 
 
-
-
+    <div class="content__topic">Simple Card</div>
+    <div class="example__div">
         <div class="card">
             <div class="card__img">
                 <img
@@ -128,7 +201,8 @@
         </div>
     </div>
 
-
+    <div class="content__topic">Text only Card</div>
+    <div class="example__div">
         <div class="card card--text">
               <header class="card__heading">Gateway Of India</header>
               <p class="card__place">Mumbai, IN</p>
@@ -150,8 +224,8 @@
         </div>
     </div>
 
-
-
+    <div class="content__topic">Horizantal Card</div>
+    <div class="example__div">
     <div class="card card--horizontal">
         <div class="card--horizontal-head">
           <div class="card--horizontal-img">
@@ -174,8 +248,10 @@
             </div>
           </footer>
     </div>
+    </div>
     
-
+    <div class="content__topic">Card With Dismiss</div>
+    <div class="example__div">
           <div class="card">
               <div class="card__img">
                   <span class="card__dismiss-icon">X</span>
@@ -203,5 +279,22 @@
               </footer>
             </div>
           </div>
+       
+        </main>
+        
+          <script src="/script.js"></script>
+
+          <!-- Prism.js Theme Plugin CDN link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+          <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+          </script>
+
 </body>
 </html>
