@@ -43,6 +43,9 @@
      text-decoration: none;
      color: var(--text-color);
  }
+ a:hover{
+     color: var(--black)
+ }
  .hero{
      display: flex;
      justify-content: center;
