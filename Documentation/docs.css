@@ -79,6 +79,10 @@
   margin: 1rem 0;
   overflow: auto;
 }
+.class__name{
+  color: var(--primary-color);
+  font-weight: 600;
+}
 
 
 
