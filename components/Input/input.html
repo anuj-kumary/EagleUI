@@ -6,31 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EagleUI | Input</title>
     <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
+      integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
+  
   </head>
   <body>
-      <div class="input">
+
+    <nav class="navbar">
+      <div class="navbar__left">
+        <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
+      </div>
+      <ul class="navbar__right">
+        <li class="navbar__link"><a href="docs.html"> Docs </a></li>
+        <li class="navbar__link">Release</li>
+        <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+      </ul>
+    </nav>
+    <div class="doc-container">
+      <aside class="sidebar">
+        <header class="sidebar__heading">Get Started</header>
+        <hr />
+        <ul>
+          <li class="sidebar__link">
+            <a href="/Documentation/docs.html">Introduction</a>
+          </li>
+          <li class="sidebar__link"><a href="#Starter_template">Colors</a></li>
+          <li class="sidebar__link">
+            <a href="/components/Text-Utility/text.html">Typograpgy</a>
+          </li>
+          <header id="components" class="sidebar__heading">Components</header>
+          <hr />
+          <li class="sidebar__link">
+            <a href="/components/Avatar/avatar.html">Avatar </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Alert/alert.html">Alert</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Badge/badge.html">Badge</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Button/button.html">Button</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Card/card.html">Card</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Image-Resp/image.html">Image</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Input/input.html">Input </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Toast/toast.html">Toast</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Navigation/navigation.html">Navigation</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <div class="content__topic">Input</div>
+        <p class="content__subtitle">
+          EagleUI has a simple Inputs fields and form fields with validation.
+          Examples are listed below.
+          Inputs are necessary for user interaction with the website. Inputs are used to take information from the user, and then save the data to the server, accordingly.
+        </p>
+        <hr class="divider" />
+        <div class="content__topic">Simple Input</div>
+        <div class="example__div">
+        <div class="input">
         <label>Name</label>
         <input class="input-txt" type="text" />
-      </div>
-      <div class="input">
+        </div>
+        <div class="input">
         <label>Email</label>
         <input class="input-txt" type="email" />
-      </div>
-      <div class="input input--err">
+        </div>
+        </div>
+        <div class="code-snippet-display">
+          <pre>
+              <code class = "language-html" data-prismjs-copy="Copy">
+&lt;div class="input"&gt;
+&lt;label&gt;Name&lt;/label&gt;
+&lt;input class="input-txt" type="text" /&gt;
+&lt;/div&gt;
+&lt;div class="input"&gt;
+&lt;label>Email&lt;/label&gt;
+&lt;input class="input-txt" type="email" /&gt;
+&lt;/div&gt;
+              </code>
+          </pre>
+        <hr class="divider" />
+        <div class="content__topic">Input with validation style</div>
+        <div class="content__subtitle">
+          Here for validation you need to add class <strong>input--err</strong>
+        </div>
+        <div class="example__div">
+        <div class="input input--err">
         <label>Password</label>
         <input class="input-txt" type="password" />
         <p class="input--err">Wrong Password. Try again.</p>
       </div>
-      <div class="input">
-        <textarea class="textarea" cols="30" rows="10"></textarea>
-      </div>
-      
-      <div class="input">
-        <input  type="range"  id="input-id-range"  min="0"
-        max="100" defaultValue="70"  className="cur-point"
-      />
       </div>
 
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;div class="input input--err"&gt;
+&lt;label>Password&lt;/label&gt;
+&lt;input class="input-txt" type="password" /&gt;
+&lt;p class="input--err">Wrong Password. Try again.&lt;/p&gt;
+&lt;/div>
+            </code>
+        </pre>
+
+      <hr class="divider" />
+      <div class="content__topic">Radio</div>
+      <div class="content__subtitle">
+        Radio buttons allow the user to select one option from a set.
+      </div>
+      <div class="example__div">
       <div class="radio">
         <input type="radio" name="language" id="html" value="HTML" />
         <label for="html">HTML</label><br />
@@ -39,6 +147,83 @@
         <input type="radio" name="language" id="javascript" value="JavaScript" disabled />
         <label for="javascript">JavaScript</label>
       </div>
+      </div>
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;div class="radio"&gt;
+&lt;input type="radio" name="language" id="html" value="HTML" /&gt;
+&lt;label for="html">HTML&lt;/label&gt;&lt;br /&gt;
+&lt;input type="radio" name="language" id="css" value="CSS" /&gt;
+&lt;label for="css">CSS&lt;/label>&lt;br /&gt;
+&lt;input type="radio" name="language" id="javascript" value="JavaScript" disabled /&gt;
+&lt;label for="javascript">JavaScript&lt;/label&gt;&lt;/div&gt;
+            </code>
+        </pre>
+      <hr class="divider" />
+      <div class="content__topic">Textarea</div>
+      <div class="content__subtitle">
+        The &lt;textarea&gt; HTML element represents a multi-line plain-text input box. It useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+      </div>
+      <div class="example__div">
+      <div class="input">
+        <textarea class="textarea" cols="30" rows="10"></textarea>
+      </div>
+      </div>
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;div class="input"&gt;
+&lt;textarea class="textarea" cols="30" rows="10"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+      <hr class="divider" />
+      <div class="content__topic">Range</div>
+      <div class="content__subtitle">
+        Range let the user specify a numeric value which must be no less than a given value, and no more than another given value
+      </div>
+      <div class="example__div">
+      <div class="input">
+        <input  type="range"  id="input-id-range"  min="0"
+        max="100" defaultValue="70"  className="cur-point"
+      />
+      </div>
+      </div>
+      <div class="code-snippet-display">
+        <pre>
+            <code class = "language-html" data-prismjs-copy="Copy">
+&lt;div class="input"&gt;
+&lt;input type="range" id="input-id-range" min="0" max="100" defaultValue="70"/&gt;
+            </code>
+        </pre>
+        <hr class="divider" />
+      <footer>
+        <div class="prev__component">
+          <i class="fas fa-chevron-left"></i>
+          <a href="../Image-Resp/image.html">Image</a>
+        </div>
+        <div class="next__component">
+          <a href="../Toast/toast.html">Toast</a>
+          <i class="next__icon fas fa-chevron-right"></i>
+        </div>
+      </footer>
+      </main>
+
+
+      <script src="/script.js"></script>
+
+      <!-- Prism.js Theme Plugin CDN link -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+        integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+      </script>
 
   </body>
 </html>

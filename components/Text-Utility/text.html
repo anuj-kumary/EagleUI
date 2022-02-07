@@ -7,71 +7,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagle | Text</title>
     <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
+        integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" /> 
+
 </head>
 
 <body>
-    <h3 class="heading text__center">Heading</h3>
-    <div class="heading">
+    <nav class="navbar">
+        <div class="navbar__left">
+            <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
+        </div>
+        <ul class="navbar__right">
+            <li class="navbar__link"><a href="docs.html"> Docs </a></li>
+            <li class="navbar__link">Release</li>
+            <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+        </ul>
+    </nav>
+    <div class="doc-container">
+        <aside class="sidebar">
+            <header class="sidebar__heading">Get Started</header>
+            <hr />
+            <ul>
+                <li class="sidebar__link">
+                    <a href="/Documentation/docs.html">Introduction</a>
+                </li>
+                <li class="sidebar__link"><a href="#Starter_template">Colors</a></li>
+                <li class="sidebar__link">
+                    <a href="/components/Text-Utility/text.html">Typograpgy</a>
+                </li>
+                <header id="components" class="sidebar__heading">Components</header>
+                <hr />
+                <li class="sidebar__link">
+                    <a href="/components/Avatar/avatar.html">Avatar </a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Alert/alert.html">Alert</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Badge/badge.html">Badge</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Button/button.html">Button</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Card/card.html">Card</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Image-Resp/image.html">Image</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Input/input.html">Input </a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Toast/toast.html">Toast</a>
+                </li>
+                <li class="sidebar__link">
+                    <a href="/components/Navigation/navigation.html">Navigation</a>
+                </li>
+            </ul>
+        </aside>
 
-        <h1>H-1 Heading 1</h2>
-            <h2>H-1 Heading 1</h2>
-            <h3>H-1 Heading 1</h3>
-            <h4>H-1 Heading 1</h4>
-            <h5>H-1 Heading 1</h5>
-            <h6>H-1 Heading 1</h6>
-    </div>
+        <main class="content">
+            <div class="content__topic">Text Utilities</div>
+            <p class="content__subtitle">
+                Text Utilities are used to control alignments with different sizes and also to center text.
+            </p>
+            <hr class="divider" />
 
-    <hr class="horizonatl-line">
+            <div class="content__topic">Heading</div>
+            <div class="content__subtitle">
+                All HTML headings, <span class="class__name">&lt;h1&gt;</span>  through <span class="class__name">&lt;h6&gt;</span>, are available.
+            </div>
+            <div class="example__div">
+            <div class="heading content__gap">
+                <h1>H-1 Heading 1</h1>
+                <h2>H-2 Heading 2</h2>
+                <h3>H-3 Heading 3</h3>
+                <h4>H-4 Heading 4</h4>
+                <h5>H-5 Heading 5</h5>
+                <h6>H-6 Heading 6</h6>
+            </div>
+            </div>
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;h1&gt;H-1 Heading 1&lt;/h1&gt;
+&lt;h2&gt;H-2 Heading 2&lt;/h2&gt;
+&lt;h3&gt;H-3 Heading 3&lt;/h3&gt;
+&lt;h4&gt;H-4 Heading 4&lt;/h4&gt;
+&lt;h5&gt;H-5 Heading 5&lt;/h5&gt;
+&lt;h6&gt;H-6 Heading 6&lt;/h6&gt;  
+                    </code>
+                </pre>
+              </div>
 
-    <h3 class=" heading text__center">Alignment</h3>
-    <div class="alignment">
-        <h6 class="text__left">Left Align </h6>
-        <h6 class="text__center">Center Align </h6>
-        <h6 class="text__right">Right Align </h6>
-    </div>
+            <hr class="horizonatl-line">
 
-    <hr class="horizonatl-line">
+            <div class="content__topic">Alignment</div>
+            <div class="content__subtitle">
+                Use classes <span class="class__name"> .text__left , .text__center or .text__right </span> to center, left or right align text.
+            </div>
+            <div class="alignment__example ">
+                <h6 class="text__left">Left Align </h6>
+           
+                <h6 class="text__center">Center Align </h6>
+           
+                <h6 class="text__right">Right Align </h6>
+            </div>
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;h6 class="text__left"&gt;Left Align &lt;/h6&gt;
+&lt;h6 class="text__center"&gt;Center Align &lt;/h6&gt;
+&lt;h6 class="text__right"&gt;Right Align &lt;/h6&gt;
+                    </code>
+                </pre>
+            <hr class="horizonatl-line">
 
-    <h3 class=" heading text__center">font-size</h3>
-    <div class="font-size">
-        <p class="fs__6">font-size 6</p>
-        <p class="fs__5">font-size 5</p>
-        <p class="fs__4">font-size 4</p>
-        <p class="fs__3">font-size 3</p>
-        <p class="fs__2">font-size 2</p>
-        <p class="fs__1">font-size 1</p>
-    </div>
+            <div class="content__topic">font-size</div>
+            <div class="content__subtitle">
+                Use classes <span class="class__name">.fs__1, .fs__2, .fs__3 , .fs__4, .fs__5 or .fs__6</span>  to change the font-size of text.
+            </div>
+            <div class="example__div">
+            <div class="font-size content__gap">
+                <p class="fs__6">font-size 6</p>
+                <p class="fs__5">font-size 5</p>
+                <p class="fs__4">font-size 4</p>
+                <p class="fs__3">font-size 3</p>
+                <p class="fs__2">font-size 2</p>
+                <p class="fs__1">font-size 1</p>
+            </div>
+            </div>
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;p class="fs__6"&gt;font-size 6&lt;/p&gt;
+&lt;p class="fs__5"&gt;font-size 5&lt;/p&gt;
+&lt;p class="fs__4"&gt;font-size 4&lt;/p&gt;
+&lt;p class="fs__3"&gt;font-size 3&lt;/p&gt;
+&lt;p class="fs__2"&gt;font-size 2&lt;/p&gt;
+&lt;p class="fs__1"&gt;font-size 1&lt;/p&gt;
+                    </code>
+                </pre>
 
-    <hr class="horizonatl-line">
+            <hr class="horizonatl-line">
 
-    <h3 class=" heading text__center">Font Weight</h3>
-    <div class="font-weight">
-        <h5 class="fw__900">Font weight 900</h5>
-        <h5 class="fw__700">Font weight 700</h5>
-        <h5 class="fw__400">Font weight 400</h5>
-        <h5 class="fw__300">Font weight 300</h5>
-        <h5 class="fw__100">Font weight 100</h5>
-    </div>
+            <div class="content__topic">Font Weight</div>
+            <div class="content__subtitle">
+                Use classes <span class="class__name">.fw__100, .fw__300, .fw__400 , .fw__700 or .fw__900</span>  to change the font-weight of text ranging from 100 to 900.
+            </div>
+            <div class="example__div">
+            <div class="font-weight content__gap">
+                <h5 class="fw__900">Font weight 900</h5>
+                <h5 class="fw__700">Font weight 700</h5>
+                <h5 class="fw__400">Font weight 400</h5>
+                <h5 class="fw__300">Font weight 300</h5>
+                <h5 class="fw__100">Font weight 100</h5>
+            </div>
+            </div>
 
-    <hr class="horizonatl-line">
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;h5 class="fw__900"&gt;Font weight 900&lt;/h5&gt;
+&lt;h5 class="fw__700"&gt;Font weight 700&lt;/h5&gt;
+&lt;h5 class="fw__400"&gt;Font weight 400&lt;/h5&gt;
+&lt;h5 class="fw__300"&gt;Font weight 300&lt;/h5&gt;
+&lt;h5 class="fw__100"&gt;Font weight 100&lt;/h5&gt;
+                    </code>
+                </pre>
 
-    <h3 class=" heading text__center">Grey text</h3>
-    <div class="text__grey">
-        <small>small text grey</small>
-        <p class="text__grey">Text Grey</p>
-        <strong>strong grey</strong>
-        <h3 class="text__grey">heading grey</h3>
-    </div>
+            <hr class="horizonatl-line">
 
-    <hr class="horizonatl-line">
+            <div class="content__topic">Grey text</div>
+            <div class="content__subtitle">
+                Use classes <span class="class__name"> .text__grey </span> to change the color of text to grey.
+            </div>
+            <div class="example__div">
+            <div class="text__grey content__gap">
+                <small class="text__grey">small text grey</small>
+                <p class="text__grey">Text Grey</p>
+                <strong>strong grey</strong>
+                <h3 class="text__grey">heading grey</h3>
+            </div>
+            </div>
 
-    <h3 class=" heading text__center">Paragraph</h3>
-    <div class="paragraph">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit assumenda aliquam quod eius adipisci
-            laborum! Esse similique nam, nostrum provident necessitatibus aliquam, itaque sint vero reprehenderit
-            adipisci ex tempora.</p>
-    </div>
-    
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;small class="text__grey"&gt;small text grey&lt;/small&gt;
+&lt;p class="text__grey"&gt;Text Grey&lt;/p&gt;
+&lt;strong&gt;strong grey&lt;/strong&gt;
+&lt;h3 class="text__grey"&gt;heading grey&lt;/h3&gt;
+                    </code>
+                </pre>
+
+            <hr class="horizonatl-line">
+
+            <div class="content__topic">Paragraph</div>
+            <div class="example__div">
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit assumenda aliquam quod eius adipisci
+                laborum! Esse similique nam, nostrum provident necessitatibus aliquam, itaque sint vero reprehenderit adipisci ex tempora.</p>
+            </div>
+            </div>
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+    &lt;p&gt;Paragraph Text&lt;/p&gt;
+                    </code>
+                </pre>
+        </main>
+
+        <script src="/script.js"></script>
+
+        <!-- Prism.js Theme Plugin CDN link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+            integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+        </script> 
 </body>
 
 </html>

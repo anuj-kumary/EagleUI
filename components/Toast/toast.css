@@ -13,7 +13,7 @@
   border-radius: 5px;
   font-weight: 600;
   color: var(--white);
-  margin: 1rem 0;
+  margin: 1rem .3rem;
 }
 .toast__standard {
   padding: 1rem;

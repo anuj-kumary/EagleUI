@@ -1,8 +1,6 @@
 .sidebar{
     flex: 0 0 240px;
     margin-right: 1rem;
-    height: 70vh;
-    overflow-y:scroll;
     transition: all .3s ease-in-out;
 }
 .sidebar__heading{
@@ -10,11 +8,15 @@
     color: #000;
     font-weight: 700;
     font-size: 1rem;
+    padding: .5rem 0;
 }
 .sidebar__link{
     padding: 0.7rem 1.9rem;
     font-size: 13px;
     font-weight: 400;
+}
+.sidebar__link:hover{
+    color: var(--text-color);
 }
 
 
@@ -25,6 +27,7 @@
       .show{
         display: block;
         position: absolute;
+        width: 50%;
         z-index: 1;
         background-color: #fff;
     }

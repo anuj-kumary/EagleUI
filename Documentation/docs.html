@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="/css/component.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="docs.css">
+
 
     <!-- Fontawesome icon CDN -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Prism.js style CDN link -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-okaidia.min.css"
-        integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
         integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
 
@@ -43,10 +43,10 @@
             <header class="sidebar__heading">Get Started</header>
             <hr>
             <ul>
-                <li class="sidebar__link"><a href="#content-heading">Introduction</a></li>
+                <li class="sidebar__link"><a href="#">Introduction</a></li>
                 <li class="sidebar__link"><a href="#Starter_template">Colors</a></li>
                 <li class="sidebar__link"><a href="/components/Text-Utility/text.html">Typograpgy</a></li>
-                <header id="components" class="sidebar__heading">Components</header>
+                <header class="sidebar__heading">Components</header>
                 <hr>
                 <li class="sidebar__link"><a href="/components/Avatar/avatar.html">Avatar
                     </a></li>
@@ -56,28 +56,62 @@
                 <li class="sidebar__link"><a href="/components/Card/card.html">Card</a></li>
                 <li class="sidebar__link"><a href="/components/Image-Resp/image.html">Image</a></li>
                 <li class="sidebar__link"><a href="/components/Input/input.html">Input </a></li>
-                <li class="sidebar__link"><a href="/components/Toast/toast.html">List</a></li>
+                <li class="sidebar__link"><a href="/components/Toast/toast.html">Toast</a></li>
                 <li class="sidebar__link"><a href="/components/Navigation/navigation.html">Navigation</a></li>
             </ul>
         </aside>
 
         <main class="content">
-            <div class="content__heading">Introduction to UI</div>
-            <div class="content__intro">
+            <div class="content__heading">Introduction to EagleUI</div>
+            <div class="content__subtitle">
                 Eagle UI is the UI farmework. which help to build product experiences at Segment. Eagle UI helps you to
                 build your Project quickly.
             </div>
-            <hr>
+            <hr class="divider">
             <div class="content">
                 <div class="content__heading">Installation</div>
-                <div class="code-snippet-display">
+                <div class="content__subtitle">
+                    Copy-paste the stylesheet <span class="code">&lt;link&gt;</span> into your &lt;head&gt; element before all other stylesheets to load our CSS.
+                </div>
+                <div class="code__snippet">
                     <pre>
-                    <code class = "language-javascript" data-prismjs-copy="Copy">
+                    <code class = "language-css" data-prismjs-copy="Copy">
 https://eagleui.netlify.app/css/component.css/ 
                     </code>
                 </pre>
                 </div>
             </div>
+            <hr class="divider">
+            <div class="content">
+                <div class="content__heading">Starter Template</div>
+                <div class="content__subtitle">
+                    The following starter template uses the latest development standards. It used HTML5 doctype and also viewport metatag. Putting it all together the page will look like...
+                </div>
+                <div class="code__snippet">
+                    <pre>
+                        <code class = "language-html" data-prismjs-copy="Copy">
+                            <!DOCTYPE html>
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;!-- required metatags --&gt;
+&lt;meta charset="UTF-8">
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;!-- EagleUI Stylesheet --&gt;
+&lt;link rel="stylesheet" href="https://eagleui.netlify.app/css/component.css/ "/&gt;
+
+&lt;title>Title&lt;/title&gt;
+&lt;/head>
+&lt;body>
+&lt;h1>EagleUI&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </main>
 
 
 

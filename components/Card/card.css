@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 21.875rem;
-    height: 25rem;
+    height: 28rem;
     border-radius: 5px;
     margin: 1rem 1rem;
     overflow: hidden;
@@ -52,7 +52,7 @@
     display: flex;
   }
   .footer__left p {
-    padding: 0 1rem;
+    padding: 0 .8rem;
     color: var(--bg-color);
   }
   .footer__right {

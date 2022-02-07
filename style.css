@@ -12,10 +12,12 @@
     --danger-color: #dc143c;
     --border-color: #999;
     --off-white : #F6F9FC;
+    --off-grey: #dadadaf3;;
     --success-color: #4CAF50;
     --error-color: #dc143c;
     --warning-color: #FF9800;
     --info-color:  #ca8a04;
+    --content-color: #333;
     --docs-text-color:#474d66;
  }
  html {
@@ -40,6 +42,9 @@
  a{
      text-decoration: none;
      color: var(--text-color);
+ }
+ a:hover{
+     color: var(--black)
  }
  .hero{
      display: flex;
@@ -96,4 +101,10 @@
  .btn__secondary:hover{
     background-color: var(--primary-color);
     color: #fcfcfc;
+ }
+
+ @media screen and (max-width:600px){
+     html{
+         font-size:10px;
+     }
  }
