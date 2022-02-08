@@ -1,0 +1,40 @@
+.color__palette{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.color__palette > div{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--off-white);
+    padding: .5rem;
+    margin: .5rem;
+    font-size: .9rem;
+}
+.primary__color{
+    background-color: var(--primary-color);
+}
+.secondary__color{
+    background-color: var(--secondary-color);
+}
+.text__color{
+    background-color: var(--text-color);
+}
+.danger__color{
+    background-color: var(--danger-color);
+}
+.warning__color{
+    background-color: var(--warning-color);
+}
+.success__color{
+    background-color: var(--success-color);
+}
+.offgrey__color{
+    background-color: var(--off-grey);
+}
+.dark__theme{
+    background-color: var(--black);
+}
