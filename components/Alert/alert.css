@@ -1,15 +1,17 @@
-  :root{
-    --error-background:#fdecea;
-    --info-background:  #e8f3fb;
+  :root {
+    --error-background: #fdecea;
+    --info-background: #e8f3fb;
     --warn-background: #fff5e3;
     --success-background: #edf7ec;
   }
+
   .alert {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .alert__success,
   .alert__info,
   .alert__error,
@@ -23,19 +25,22 @@
     width: 30rem;
     cursor: pointer;
   }
+
   .alert__error {
     background-color: var(--error-background);
     color: var(--error-color);
   }
+
   .alert__info {
     background-color: var(--info-background);
     color: var(--info-color);
   }
+
   .alert__warning {
     background-color: var(--warn-background);
     color: var(--warning-color);
   }
+
   i {
     padding-right: 0.7rem;
   }
-  

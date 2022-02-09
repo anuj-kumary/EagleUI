@@ -1,9 +1,10 @@
-.color__palette{
+.color__palette {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
-.color__palette > div{
+
+.color__palette>div {
     width: 120px;
     height: 120px;
     display: flex;
@@ -14,27 +15,35 @@
     margin: .5rem;
     font-size: .9rem;
 }
-.primary__color{
+
+.primary__color {
     background-color: var(--primary-color);
 }
-.secondary__color{
+
+.secondary__color {
     background-color: var(--secondary-color);
 }
-.text__color{
+
+.text__color {
     background-color: var(--text-color);
 }
-.danger__color{
+
+.danger__color {
     background-color: var(--danger-color);
 }
-.warning__color{
+
+.warning__color {
     background-color: var(--warning-color);
 }
-.success__color{
+
+.success__color {
     background-color: var(--success-color);
 }
-.offgrey__color{
+
+.offgrey__color {
     background-color: var(--off-grey);
 }
-.dark__theme{
+
+.dark__theme {
     background-color: var(--black);
 }

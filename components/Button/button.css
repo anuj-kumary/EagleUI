@@ -1,122 +1,141 @@
-:root{
-    --white:#fff;
-    --black:#111;
-    --blue: #0000ff;
-    --off-white: #f8fafc;
-    --border: 1px solid;
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: #0000ff;
+  --off-white: #f8fafc;
+  --border: 1px solid;
 }
+
 .btn {
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    min-width: 6.25rem;
-    width: max-content;
-    padding: 0.8rem 1rem;
-    border: none;
-    cursor: pointer;
-    margin: 0.625rem;
-  }
-  .btn__default {
-    background-color: var(--primary-color);
-    color: var(--white);
-  }
-  .btn--secondary{
-      outline: none;
-  }
-  .btn__success {
-    background-color: var(--success-color);
-    color: var(--white);
-  }
-  .btn__error {
-    background-color: var(--error-color);
-    color: var(--white);
-  }
-  .btn__warn {
-    background-color: var(--warning-color);
-  }
-  .btn__dark {
-    background-color: var(--black);
-    color: var(--white);
-  }
-  .btn__link{
-      text-decoration: underline;
-      color: var(--blue);
-      font-weight:400
-  }
-  .btn__light {
-    background-color:var(--off-white);
-  }
-  .btn--outlined {
-    background-color: var(--white);
-    border-color: (--primary-color);
-    color: var(--primary-color);
-    border-width: 1px;
-    border-style: solid;
-  }
-  .outlined__secondary {
-    background-color: var(--white);
-    border-color: var(--black);
-    color: var(--black);
-  }
-  .outlined__success {
-    background-color: var(--white);
-    border-color:  var(--success-color);
-    color: var(--success-color);
-  }
-  .outlined__error {
-    background-color: var(--white);
-    border-color: var(--error-color);
-    color: var(--error-color);
-  }
-  .outlined__warn {
-    background-color: var(--white);
-    border-color:var(--warning-color);
-    color: var(--warning-color);
-  }
-  .floating-btn {
-    background-color: var(--error-color);
-    color: var(--white);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: none;
-  }
-  .show {
-    display: block;
-  }
-  .icon {
-    padding-right: 0.5rem;
-  }
-  .floating-container{
-    width: 40rem;
-    height: 15rem;
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  .list-item{
-    display: flex;
-    margin: 1rem 0;
-    justify-content: space-around;
-  }
-   .btn__floating{
-    position: sticky;
-    /* bottom: 6rem;
-    left: 42rem; */
-    right: 3rem;
-    padding: 1rem 0;
-    display: flex;
-    width: 3rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    border-width: 0;
-    background-color: var(--success-color);
-  }
-  .floating__icon{
-    text-align: center;
-    font-size: 1rem;
-    padding-left: .6rem;
-    color: var(--white);
-  }
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  min-width: 6.25rem;
+  width: max-content;
+  padding: 0.8rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 0.625rem;
+}
+
+.btn__default {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn--secondary {
+  outline: none;
+}
+
+.btn__success {
+  background-color: var(--success-color);
+  color: var(--white);
+}
+
+.btn__error {
+  background-color: var(--error-color);
+  color: var(--white);
+}
+
+.btn__warn {
+  background-color: var(--warning-color);
+}
+
+.btn__dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn__link {
+  text-decoration: underline;
+  color: var(--blue);
+  font-weight: 400
+}
+
+.btn__light {
+  background-color: var(--off-white);
+}
+
+.btn--outlined {
+  background-color: var(--white);
+  border-color: (--primary-color);
+  color: var(--primary-color);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.outlined__secondary {
+  background-color: var(--white);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.outlined__success {
+  background-color: var(--white);
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.outlined__error {
+  background-color: var(--white);
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.outlined__warn {
+  background-color: var(--white);
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+.floating-btn {
+  background-color: var(--error-color);
+  color: var(--white);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.icon {
+  padding-right: 0.5rem;
+}
+
+.floating-container {
+  width: 40rem;
+  height: 15rem;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.list-item {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-around;
+}
+
+.btn__floating {
+  position: sticky;
+  right: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border-width: 0;
+  background-color: var(--success-color);
+}
+
+.floating__icon {
+  text-align: center;
+  font-size: 1rem;
+  padding-left: .6rem;
+  color: var(--white);
+}

@@ -7,6 +7,7 @@
   margin: 5rem 0;
   width: 70%;
 }
+
 .toast__msg {
   background-color: var(--success-color);
   padding: 0.8rem 1.3rem;
@@ -15,6 +16,7 @@
   color: var(--white);
   margin: 1rem .3rem;
 }
+
 .toast__standard {
   padding: 1rem;
   border-left: 8px solid var(--primary-color);
@@ -24,9 +26,11 @@
   line-height: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .toast__warn {
   background-color: var(--warning-color);
 }
+
 .toast__btn {
   padding: 0 1.1rem;
   text-align: center;
@@ -37,6 +41,7 @@
   font-weight: 600;
   cursor: pointer;
 }
+
 .heading {
   margin-bottom: 2rem;
 }

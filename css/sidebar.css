@@ -1,35 +1,42 @@
-.sidebar{
+.sidebar {
     flex: 0 0 240px;
     margin-right: 1rem;
-    transition: all .3s ease-in-out;
-    height: 100%;
+    transition: all .5s ease-out;
+    height: 80%;
 }
-.sidebar__heading{
+
+.sidebar__heading {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     font-weight: 700;
     font-size: 1rem;
     padding: .5rem 0;
 }
-.sidebar__link{
+
+.sidebar__link {
     padding: 0.7rem 1.9rem;
     font-size: 13px;
     font-weight: 400;
 }
-.sidebar__link:hover{
+
+.sidebar__link:hover {
     color: var(--text-color);
 }
 
-
+/* Responsive Style */
 
 @media screen and (max-width:800px) {
-      .sidebar{
-          display: none;
-      }
-      .show{
+    .sidebar {
+        display: none;
+    }
+
+    .show {
         display: block;
         width: 50%;
         z-index: 5;
-        background-color: #fff;
+        position: fixed;
+        left: 0;
+        padding: 2rem;
+        background-color: var(--white);
     }
 }

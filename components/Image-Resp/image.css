@@ -1,23 +1,25 @@
 .images {
-    padding: 0.5rem;
-    width: 70%;
-  }
-  .images__res {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .sq-images__images {
-    height: 11.25rem;
-    width: 11.25rem;
-    margin: 0.625rem;
-    object-fit: cover;
-  }
-  
-  .round-images__images {
-    border-radius: 50%;
-    height: 11.25rem;
-    width: 11.25rem;
-    margin: 0.625rem;
-    object-fit: cover;
-  }
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.images__res {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sq-images__images {
+  height: 11.25rem;
+  width: 11.25rem;
+  margin: 0.625rem;
+  object-fit: cover;
+}
+
+.round-images__images {
+  border-radius: 50%;
+  height: 11.25rem;
+  width: 11.25rem;
+  margin: 0.625rem;
+  object-fit: cover;
+}

@@ -9,14 +9,17 @@
     border-radius: 5px;
     font-family: var(--font-family);
   }
-  .navigation__heading{
-      font-size: 1.5rem;
-      color: var(--text-color);
+
+  .navigation__heading {
+    font-size: 1.5rem;
+    color: var(--text-color);
   }
+
   .navbar__menu {
     display: flex;
     align-items: center;
   }
+
   .navbar__link,
   .navbar__social-link {
     list-style-type: none;
@@ -24,20 +27,25 @@
     font-size: 1rem;
     color: var(--text-color);
   }
-  .navbar__social-link{
-      font-size: 1.3rem;
+
+  .navbar__social-link {
+    font-size: 1.3rem;
   }
+
   .navbar__link:hover,
-  .navbar__social-link:hover{
-      color: var(--black);
-      cursor: pointer;
+  .navbar__social-link:hover {
+    color: var(--black);
+    cursor: pointer;
   }
+
   .navbar__social {
     display: flex;
   }
+
   .navbar__search {
     display: flex;
   }
+
   .searchbar {
     width: 100%;
     border-width: 0;
@@ -45,6 +53,7 @@
     border-radius: 5px;
     margin-right: 0.5rem;
   }
+
   .navbar__btn {
     padding: 0.3rem 1rem;
     border-radius: 5px;

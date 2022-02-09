@@ -1,8 +1,9 @@
-.content__gap{
+.content__gap {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .text__left {
     text-align: left;
 }

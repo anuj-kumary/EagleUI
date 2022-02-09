@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     padding: 2.5rem 1rem;
     width: 100%;
     display: flex;
@@ -7,39 +7,45 @@
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 7;
 }
-.navbar__left{
+
+.navbar__left {
     font-size: 1.2rem;
     font-weight: 900;
 }
-.navbar__right{
+
+.navbar__right {
     display: flex;
     justify-content: space-evenly;
 }
-.navbar__link{
+
+.navbar__link {
     margin: 0 1rem;
     color: var(--text-color);
     font-weight: 500;
     font-size: .9rem;
 }
-.navbar__hamburger{
+
+.navbar__hamburger {
     display: none;
     font-size: 1rem;
 }
-.navbar__link:hover{
-    color: #111;
+
+.navbar__link:hover {
+    color: var(--black);
 }
 
 
+/* Responsive Style */
 
 @media screen and (max-width:800px) {
-    .navbar__hamburger{
+    .navbar__hamburger {
         display: block;
         cursor: pointer;
     }
 
-.show{
-    display: block;
-}
+    .show {
+        display: block;
+    }
 }
