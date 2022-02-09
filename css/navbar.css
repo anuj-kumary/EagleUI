@@ -3,7 +3,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: var(--white);
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .navbar__left{
     font-size: 1.2rem;

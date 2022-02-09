@@ -2,6 +2,7 @@
     flex: 0 0 240px;
     margin-right: 1rem;
     transition: all .3s ease-in-out;
+    height: 100%;
 }
 .sidebar__heading{
     text-decoration: none;
@@ -26,9 +27,8 @@
       }
       .show{
         display: block;
-        position: absolute;
         width: 50%;
-        z-index: 1;
+        z-index: 5;
         background-color: #fff;
     }
 }
