@@ -44,3 +44,12 @@
   i {
     padding-right: 0.7rem;
   }
+
+  @media screen and (max-width:400px) {
+    .alert__success,
+    .alert__info,
+    .alert__error,
+    .alert__warning {
+     width: 100%;
+    }
+  }
