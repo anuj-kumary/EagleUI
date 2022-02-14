@@ -255,6 +255,9 @@
     padding: 1rem;
     position: relative;
  }
+.product__image > img{
+  object-fit: contain;
+}
  .product__favourite{
      position: absolute;
      right: .2rem;
