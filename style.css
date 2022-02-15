@@ -103,24 +103,24 @@ a:hover {
 
 .btn__primary {
     background-color: var(--primary-color);
-    color: #fcfcfc;
+    color: var(--off-white);
 }
 
 .btn__primary:hover {
-    background-color: #fcfcfc;
+    background-color: var(--off-white);
     border: 1px solid var(--primary-color);
-    color: #111;
+    color: var(--black);
 
 }
 
 .btn__secondary {
-    color: #111;
+    color: var(--black);
     border: 1px solid var(--primary-color);
 }
 
 .btn__secondary:hover {
     background-color: var(--primary-color);
-    color: #fcfcfc;
+    color: var(--off-white);
 }
 
 @media screen and (max-width:600px) {

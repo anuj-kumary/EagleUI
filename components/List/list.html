@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EagleUI | List</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
+      integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar__left">
+        <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
+      </div>
+      <ul class="navbar__right">
+        <li class="navbar__link"><a href="/Documentation/docs.html"> Docs </a></li>
+        <li class="navbar__link">Release</li>
+        <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+      </ul>
+    </nav>
+    <div class="doc-container">
+      <aside class="sidebar">
+        <header class="sidebar__heading">Get Started</header>
+        <hr />
+        <ul>
+          <li class="sidebar__link">
+            <a href="/Documentation/docs.html">Introduction</a>
+          </li>
+          <li class="sidebar__link"><a href="/components/Color/color.html">Colors</a></li>
+          <li class="sidebar__link">
+            <a href="/components/Text-Utility/text.html">Text Utility</a>
+          </li>
+          <header id="components" class="sidebar__heading">Components</header>
+          <hr />
+          <li class="sidebar__link">
+            <a href="/components/Avatar/avatar.html">Avatar </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Alert/alert.html">Alert</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Badge/badge.html">Badge</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Button/button.html">Button</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Card/card.html">Card</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Image-Resp/image.html">Image</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Input/input.html">Input </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Toast/toast.html">Toast</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Navigation/navigation.html">Navigation</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <div class="content__topic">List</div>
+        <p class="content__subtitle">
+          EagleUI has a simple Lists which is used to indent points inside another line.
+        </p>
+        <hr class="divider" />
+        <div class="content__topic">List</div>
+        <div class="example__div">
+            <ul class="list">
+                <li class="list__item">First item</li>
+                <li class="list__item">Second item</li>
+                <li class="list__item">Third item</li>
+                <li class="list__item">Fourth item</li>
+                <li class="list__item">Fifth item</li>
+              </ul>
+        </div>
+        <div class="code-snippet-display">
+            <pre>
+                <code class = "language-html" data-prismjs-copy="Copy">
+&lt;li class="list__item"&gt;First item&lt;/li&gt;
+&lt;li class="list__item"&gt;Second item&lt;/li&gt;
+&lt;li class="list__item"&gt;Third item&lt;/li&gt;
+&lt;li class="list__item"&gt;Fourth item&lt;/li&gt;
+&lt;li class="list__item"&gt;Fifth item&lt;/li&gt;
+                </code>
+            </pre>
+            <hr class="divider" />
+            <div class="content__topic">Stacked List</div>
+            <div class="example__div">
+                <ul class="list__group">
+                    <li class="list__item">
+                      <div class="list__heading">
+                        <h3>List Group Heading</h3>
+                        <h4>4 days ago</h4>
+                      </div>
+                      <p>Dummy notification lorem ipsum do el set</p>
+                    </li>
+              
+                    <li class="list__item">
+                      <div class="list__heading">
+                        <h3>List Group Heading</h3>
+                        <h4>4 days ago</h4>
+                      </div>
+                      <p>Dummy notification lorem ipsum do el set</p>
+                    </li>
+                  </ul>
+            </div>
+            <div class="code-snippet-display">
+                <pre>
+                    <code class = "language-html" data-prismjs-copy="Copy">
+&lt;li class="list__item"&gt;
+&lt;div class="list__heading"&gt;
+&lt;h3&gt;List Group Heading&lt;/h3&gt;
+&lt;h4&gt;4 days ago&lt;/h4&gt;
+&lt;/div&gt;
+&lt;p>Dummy notification lorem ipsum do el set</p>
+&lt;/li&gt;
+
+&lt;li class="list__item"&gt;
+&lt;div class="list__heading"&gt;
+&lt;h3>List Group Heading&lt;/h3&gt;
+&lt;h4>4 days ago&lt;/h4&gt;
+&lt;/div&gt;
+&lt;p>Dummy notification lorem ipsum do el set</p>
+&lt;/li&gt;
+                    </code>
+                </pre>
+                <hr class="divider" />
+                <footer>
+                  <div class="prev__component">
+                    <i class="fas fa-chevron-left"></i>
+                    <a href="../Navigation/navigation.html">Navigation</a>
+                  </div>
+                </footer>
+    </main>
+    
+
+
+    <script src="/script.js"></script>
+
+    <!-- Prism.js Theme Plugin CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+      integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
+    </script>
+
+
+</body>
+</html>
