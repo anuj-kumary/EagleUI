@@ -1,0 +1,26 @@
+.grid {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    color: var(--off-white)
+}
+
+.grid__item {
+    border: 1px solid var(--black);
+    padding: 1rem;
+}
+
+.grid__two {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--primary-color);
+}
+
+.grid__three {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--success-color);
+}
+
+.grid__four {
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--danger-color);
+}
