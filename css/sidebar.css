@@ -38,5 +38,6 @@
         left: 0;
         padding: 2rem;
         background-color: var(--white);
+        overflow-y: scroll;
     }
 }
