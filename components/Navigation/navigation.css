@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    flex-wrap: wrap;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 1rem;
@@ -61,4 +62,3 @@
     border: 1px solid var(--primary-color);
     font-weight: 600;
   }
-  

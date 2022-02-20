@@ -56,7 +56,10 @@ a {
 a:hover {
     color: var(--black)
 }
-
+.active{
+    color: var(--primary-color);
+    font-weight: 600;
+}
 .hero {
     display: flex;
     justify-content: center;
