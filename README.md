@@ -7,7 +7,7 @@ To start using the components in your project, Copy-paste the stylesheet <link> 
   ```
     <link
         rel="stylesheet"
-        href="https://eagleui.netlify.app/css/component.css/"
+        href="https://eagleui.netlify.app/css/component.css"
     />
   ```
   ### EagleUI Containes the following Components -
