@@ -1,7 +1,11 @@
-# EagleUI
+<h1 align="center">EagleUI</h1>
+<h3 align="center">Components as sharp as an Eagle</h3>
+           
 ## Technologies Used -
 * HTML
 * CSS
+## Description-
+Eagle is A lightweight and modular front-end framework for developing fast and powerful web interfaces. Documentation is completely **Responsive** for all device sizes.
 ## Quick Start -
 To start using the components in your project, Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
   ```
@@ -22,15 +26,11 @@ To start using the components in your project, Copy-paste the stylesheet <link> 
   * Navigation
   * Text Utility
   
-  ## ScreenShots -
-  ![Screenshot from 2022-02-07 14-50-43](https://user-images.githubusercontent.com/65344146/152760860-8951407e-7193-43d3-ae1c-0fb5a94ff884.png)
-  ![Screenshot from 2022-02-07 14-50-57](https://user-images.githubusercontent.com/65344146/152760889-90283896-b4b7-4bfa-889e-2d0bf5af850f.png)
-  ![Screenshot from 2022-02-07 14-53-46](https://user-images.githubusercontent.com/65344146/152760945-9fb42db0-8c10-4a6e-ae57-7fe92b01add0.png)
-  ![Screenshot from 2022-02-07 14-52-28](https://user-images.githubusercontent.com/65344146/152760973-c6de25e4-cb1f-4267-b757-bf3f6c7b988c.png)
+  ## Demo -
+  
 
 
-
-
+https://user-images.githubusercontent.com/65344146/154862333-9386845f-c00b-4bdc-b8aa-87ee3a3c2b34.mp4
   
   
                     
