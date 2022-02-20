@@ -110,21 +110,20 @@ a:hover {
 }
 
 .btn__primary:hover {
-    background-color: var(--off-white);
-    border: 1px solid var(--primary-color);
-    color: var(--black);
-
+   opacity: .7;
+   color: var( --off-white)
 }
 
 .btn__secondary {
     color: var(--black);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--content-color);
+}
+.btn__secondary:hover{
+    background-color: var(--primary-color);
+    color: var( --off-white);
+    border:none
 }
 
-.btn__secondary:hover {
-    background-color: var(--primary-color);
-    color: var(--off-white);
-}
 
 @media screen and (max-width:600px) {
     html {
