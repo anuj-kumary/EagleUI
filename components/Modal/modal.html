@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eagle | Alert</title>
-    <link rel="icon" type="image/svg+xml" href="/img/dove-solid.png">
+    <title>Eagle | Modal</title>
+    <link rel="icon" type="image/svg+xml" href="/img/dove-solid.png" />
+    <link rel="stylesheet" href="/css/component.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
-    <link rel="stylesheet" href="/css/component.css" />
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-twilight.min.css"
@@ -19,6 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css"
@@ -30,11 +37,14 @@
         <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
       </div>
       <ul class="navbar__right">
-        <li class="navbar__link"><a href="/Documentation/docs.html"> Docs </a></li>
+        <li class="navbar__link">
+          <a href="/Documentation/docs.html"> Docs </a>
+        </li>
         <li class="navbar__link">Release</li>
         <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
       </ul>
     </nav>
+
     <div class="doc-container">
       <aside class="sidebar">
         <header class="sidebar__heading">Get Started</header>
@@ -43,7 +53,9 @@
           <li class="sidebar__link">
             <a href="/Documentation/docs.html">Introduction</a>
           </li>
-          <li class="sidebar__link"><a href="/components/Color/color.html">Colors</a></li>
+          <li class="sidebar__link">
+            <a href="/components/Color/color.html">Colors</a>
+          </li>
           <li class="sidebar__link">
             <a href="/components/Text-Utility/text.html">Text Utility</a>
           </li>
@@ -53,7 +65,7 @@
             <a href="/components/Avatar/avatar.html">Avatar </a>
           </li>
           <li class="sidebar__link">
-            <a class="active" href="/components/Alert/alert.html">Alert</a>
+            <a href="/components/Alert/alert.html">Alert</a>
           </li>
           <li class="sidebar__link">
             <a href="/components/Badge/badge.html">Badge</a>
@@ -76,91 +88,68 @@
           <li class="sidebar__link">
             <a href="/components/Navigation/navigation.html">Navigation</a>
           </li>
-          <li class="sidebar__link"><a href="/components/List/list.html">List</a></li>
-          <li class="sidebar__link"><a href="/components/Grid/grid.html">Grid</a></li>
+          <li class="sidebar__link">
+            <a href="/components/List/list.html">List</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Grid/grid.html">Grid</a>
+          </li>
           <li class="sidebar__link">
             <a href="/components/Rating/rating.html">Rating</a>
           </li>
           <li class="sidebar__link">
-            <a href="/components/Modal/modal.html">Modal</a>
+            <a class="active" href="/components/Modal/modal.html">Modal</a>
           </li>
         </ul>
       </aside>
 
       <main class="content">
-        <div class="content__topic">Alert</div>
+        <div class="content__topic">Modal</div>
         <p class="content__subtitle">
-          The Alert component is used to show feedback to the user about an
-          action or state.
+          Modal add dialogs to your site for lightboxes, user notifications, or
+          completely custom content.
         </p>
         <hr class="divider" />
-        <div class="content__topic">Simple Alert</div>
-        <p class="content__subtitle">
-          The alert offers four severity levels that set a distinctive icon and
-          color.
-        </p>
         <div class="example__div">
-        <div class="alert">
-          <div class="alert__success">
-            <span><i class="far fa-check-circle"></i></span>
-            <strong>Success!! </strong>
-            <span>A simple success alert—check it out!</span>
-          </div>
-          <div class="alert__info">
-            <span><i class="fas fa-info-circle"></i></span>
-            <strong>Info!! </strong>
-            <span>A simple primary alert—check it out! </span>
-          </div>
-          <div class="alert__warning">
-            <span><i class="fas fa-exclamation-triangle"></i></span>
-            <strong>Warning!! </strong>
-            <span>A simple warning alert—check it out! </span>
-          </div>
-          <div class="alert__error">
-            <span><i class="fas fa-exclamation-circle"></i></span>
-            <strong>Error!! </strong>
-            <span>A simple error alert—check it out! </span>
-          </div>
+            <div class="modal">
+                <h2>Heading for the modal
+                 <span class="modal__icon">X</span>
+                </h2>
+                <hr />
+                <p class="modal__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit sint fugiat quas soluta doloremque minima illum. Vitae delectus saepe porro, dolore sed temporibus dolorum facilis expedita illum, laborum inventore?
+                        </p>
+                <div class="modal__buttons">
+                  <button class="btn btn--secondary" >Close</button>
+                  <button class="btn btn__default" >Submit<button>
+                </div>
+            </div>
         </div>
-      </div>
-
         <div class="code-snippet-display">
-          <pre>
-              <code class = "language-html" data-prismjs-copy="Copy">
-        &lt;div class="alert__success"&gt;
-        &lt;span&gt;&lt;i class="far fa-check-circle"&gt;&lt;/i&gt;&lt;/span&gt;
-        &lt;strong&gt;Success!! &lt;/strong&gt; &lt;span&gt;A simple success alert—check it out!&lt;/span&gt;
+            <pre>
+                <code class = "language-html" data-prismjs-copy="Copy">
+        &lt;div class="modal"&gt;
+        &lt;h2>Heading for the modal
+        &lt;span class="modal__icon"&gt;X&lt;/span&gt;&lt;/h2&gt;
+        &lt;hr/&gt;
+        &lt;p class="modal__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit sint fugiat quas soluta doloremque minima illum. Vitae delectus saepe porro, dolore sed temporibus dolorum facilis expedita illum, laborum inventore?&lt;/p&gt;
+        &lt;div class="modal__buttons"&gt;
+        &lt;button class="btn btn--secondary"&gt;Close&lt;/button&gt;
+        &lt;button class="btn btn__default"&gt;Submit&lt;button&gt;
         &lt;/div&gt;
-        &lt;div class="alert__info"&gt;
-        &lt;span&gt;&lt;i class="fas fa-info-circle">&lt;/i>&lt;/span>
-        &lt;strong&gt;Info!! &lt;/strong&gt; &lt;span&gt;A simple primary alert—check it out! &lt;/span &gt;
-        &lt;/div &gt;
-        &lt;div class="alert__warning"&gt;
-        &lt;span&gt;&lt;i class="fas fa-exclamation-triangle"&gt;&lt;/i &gt; &lt; /span &gt;
-        &lt;strong&gt;Warning!! &lt;/strong &gt; &lt;span&gt;A simple warning alert—check it out! &lt;/span &gt;
         &lt;/div&gt;
-        &lt;div class="alert__error"&gt;
-        &lt;span&gt;&lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;&lt;/span&gt;
-        &lt;strong>Error!! &lt;/strong&gt; &lt;span&gt;A simple error alert—check it out! &lt;/span&gt;
-              </code>
-          </pre>
+                </code>
+            </pre>
         </div>
         <hr class="divider" />
         <footer>
           <div class="prev__component">
             <i class="fas fa-chevron-left"></i>
-            <a href="../Avatar/avatar.html">Avatar</a>
-          </div>
-          <div class="next__component">
-            <a href="../Badge/badge.html">Badge</a>
-            <i class="next__icon fas fa-chevron-right"></i>
+            <a href="../Rating/rating.html">Rating</a>
           </div>
         </footer>
+
       </main>
-
-
-
-
+    </div>
 
     <script src="/script.js"></script>
 
