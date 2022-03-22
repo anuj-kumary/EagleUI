@@ -11,7 +11,7 @@
 
 .rating__container:not(:checked)>label {
     float: right;
-    width: 1em;
+    width: 2rem;
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
