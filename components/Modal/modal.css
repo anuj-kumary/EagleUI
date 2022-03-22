@@ -1,0 +1,26 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding: 1rem 2rem;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.modal__icon {
+    float: right;
+    color: var(--off-grey);
+    cursor: pointer;
+}
+
+.modal__para {
+    padding: 1rem 0;
+}

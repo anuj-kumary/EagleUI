@@ -33,84 +33,98 @@
   </head>
   <body>
     <nav class="navbar">
-        <div class="navbar__left">
-          <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
-        </div>
-        <ul class="navbar__right">
-          <li class="navbar__link"><a href="/Documentation/docs.html"> Docs </a></li>
-          <li class="navbar__link">Release</li>
-          <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
-        </ul>
-      </nav>
-      <div class="doc-container">
-        <aside class="sidebar">
-          <header class="sidebar__heading">Get Started</header>
+      <div class="navbar__left">
+        <p class="navbar__logo"><a href="/index.html">Eagle UI </a></p>
+      </div>
+      <ul class="navbar__right">
+        <li class="navbar__link">
+          <a href="/Documentation/docs.html"> Docs </a>
+        </li>
+        <li class="navbar__link">Release</li>
+        <li class="navbar__hamburger"><i class="fas fa-bars"></i></li>
+      </ul>
+    </nav>
+    <div class="doc-container">
+      <aside class="sidebar">
+        <header class="sidebar__heading">Get Started</header>
+        <hr />
+        <ul>
+          <li class="sidebar__link">
+            <a href="/Documentation/docs.html">Introduction</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Color/color.html">Colors</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Text-Utility/text.html">Text Utility</a>
+          </li>
+          <header id="components" class="sidebar__heading">Components</header>
           <hr />
-          <ul>
-            <li class="sidebar__link">
-              <a href="/Documentation/docs.html">Introduction</a>
-            </li>
-            <li class="sidebar__link"><a href="/components/Color/color.html">Colors</a></li>
-            <li class="sidebar__link">
-              <a href="/components/Text-Utility/text.html">Text Utility</a>
-            </li>
-            <header id="components" class="sidebar__heading">Components</header>
-            <hr />
-            <li class="sidebar__link">
-              <a href="/components/Avatar/avatar.html">Avatar </a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Alert/alert.html">Alert</a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Badge/badge.html">Badge</a>
-            </li>
-            <li class="sidebar__link">
-              <a class="active" href="/components/Button/button.html">Button</a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Card/card.html">Card</a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Image-Resp/image.html">Image</a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Input/input.html">Input </a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Toast/toast.html">Toast</a>
-            </li>
-            <li class="sidebar__link">
-              <a href="/components/Navigation/navigation.html">Navigation</a>
-            </li>
-            <li class="sidebar__link"><a href="/components/List/list.html">List</a></li>
-            <li class="sidebar__link"><a href="/components/Grid/grid.html">Grid</a></li>
-            <li class="sidebar__link"><a href="/components/Rating/rating.html">Rating</a></li>
-          </ul>
-        </aside>
+          <li class="sidebar__link">
+            <a href="/components/Avatar/avatar.html">Avatar </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Alert/alert.html">Alert</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Badge/badge.html">Badge</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Button/button.html">Button</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Card/card.html">Card</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Image-Resp/image.html">Image</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Input/input.html">Input </a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Toast/toast.html">Toast</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Navigation/navigation.html">Navigation</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/List/list.html">List</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Grid/grid.html">Grid</a>
+          </li>
+          <li class="sidebar__link">
+            <a class="active" href="/components/Rating/rating.html">Rating</a>
+          </li>
+          <li class="sidebar__link">
+            <a href="/components/Modal/modal.html">Modal</a>
+          </li>
+        </ul>
+      </aside>
 
-        <main class="content">
-            <div class="content__topic">Rating</div>
-            <p class="content__subtitle">
-                Rating components provide insight regarding others' opinions and experiences. It can be used in reviews section as form too.
-              </p>
-              <hr class="divider" />
-              <div class="example__div">
-                <div class="rating__container">
-                    <input type="radio" name="star" value="5" id="star5" >
-                    <label for="star5" ></label>
-                    <input type="radio" name="star" value="4" id="star4" >
-                    <label for="star4" ></label>
-                    <input type="radio" name="star" value="3" id="star3" >
-                    <label for="star3" ></label>
-                    <input type="radio" name="star" value="2" id="star2" >
-                    <label for="star2" ></label>
-                    <input type="radio" name="star" value="1" id="star1" >
-                    <label for="star1" ></label>
-                </div>
-              </div>
-              <div class="code-snippet-display">
-                <pre>
+      <main class="content">
+        <div class="content__topic">Rating</div>
+        <p class="content__subtitle">
+          Rating components provide insight regarding others' opinions and
+          experiences. It can be used in reviews section as form too.
+        </p>
+        <hr class="divider" />
+        <div class="example__div">
+          <div class="rating__container">
+            <input type="radio" name="star" value="5" id="star5" />
+            <label for="star5"></label>
+            <input type="radio" name="star" value="4" id="star4" />
+            <label for="star4"></label>
+            <input type="radio" name="star" value="3" id="star3" />
+            <label for="star3"></label>
+            <input type="radio" name="star" value="2" id="star2" />
+            <label for="star2"></label>
+            <input type="radio" name="star" value="1" id="star1" />
+            <label for="star1"></label>
+          </div>
+        </div>
+        <div class="code-snippet-display">
+          <pre>
                     <code class = "language-html" data-prismjs-copy="Copy">
             &lt;div class="rating-container"&gt;
             &lt;input type="radio" name="star" &gt;
@@ -126,36 +140,35 @@
             &lt;/div&gt;
                     </code>
                 </pre>
+        </div>
+
+        <hr class="divider" />
+        <footer>
+          <div class="prev__component">
+            <i class="fas fa-chevron-left"></i>
+            <a href="../Grid/grid.html">Grid</a>
           </div>
-
-          <hr class="divider" />
-          <footer>
-            <div class="prev__component">
-              <i class="fas fa-chevron-left"></i>
-              <a href="../Grid/grid.html">Grid</a>
-            </div>
-            <div class="next__component">
-              <a href="../Modal/modal.html">Modal</a>
-              <i class="next__icon fas fa-chevron-right"></i>
-            </div>
-          </footer>
-
-        </main>
-
+          <div class="next__component">
+            <a href="../Modal/modal.html">Modal</a>
+            <i class="next__icon fas fa-chevron-right"></i>
+          </div>
+        </footer>
+      </main>
+    </div>
 
     <script src="/script.js"></script>
 
     <!-- Prism.js Theme Plugin CDN link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
       integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Prism.js copy-to-clipboard functionality plugin cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js">
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
   </body>
 </html>
