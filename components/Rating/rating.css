@@ -1,0 +1,41 @@
+.rating__container {
+    float: left;
+    height: 2.183rem;
+    padding: 0 .625rem;
+}
+
+.rating__container:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rating__container:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.875rem;
+    color: var(--text-color)
+}
+
+.rating__container:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rating__container>input:checked~label {
+    color: var(--warning-color);
+}
+
+.rating__container:not(:checked)>label:hover,
+.rating__container:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rating__container>input:checked+label:hover,
+.rating__container>input:checked+label:hover~label,
+.rating__container>input:checked~label:hover,
+.rating__container>input:checked~label:hover~label,
+.rating__container>label:hover~input:checked~label {
+    color: #c59b08;
+}
