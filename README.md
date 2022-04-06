@@ -15,16 +15,22 @@ To start using the components in your project, Copy-paste the stylesheet <link> 
     />
   ```
   ### EagleUI Containes the following Components -
-  * Alert
   * Avatar
-  * Badge
-  * Button
-  * Card
-  * Image
-  * Input
-  * Toast
-  * Navigation
-  * Text Utility
+* Alert
+* Badge
+* Button
+* Card
+* Image
+* Input
+* Toast
+* Navigation
+* List
+* Grid
+* Rating
+* Modal
+           
+           
+
   
   ## Demo -
   
