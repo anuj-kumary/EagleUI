@@ -14,8 +14,8 @@ To start using the components in your project, Copy-paste the stylesheet <link> 
         href="https://eagleui.netlify.app/css/component.css"
     />
   ```
-  ### EagleUI Containes the following Components -
-  * Avatar
+  ## EagleUI Containes the following Components -
+* Avatar
 * Alert
 * Badge
 * Button
@@ -28,6 +28,7 @@ To start using the components in your project, Copy-paste the stylesheet <link> 
 * Grid
 * Rating
 * Modal
+* Text Utility
            
            
 
